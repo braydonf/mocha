@@ -31,12 +31,6 @@
     "man": "man",
     "test": "tests"
   },
-  "files": [
-    "LICENSE-MIT.txt",
-    "he.js",
-    "bin/",
-    "man/"
-  ],
   "homepage": "https://mths.be/he",
   "keywords": [
     "string",

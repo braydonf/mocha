@@ -7,10 +7,10 @@
  * Module dependencies.
  */
 
-const program = require('commander');
+const program = require('../vendor/commander');
 const path = require('path');
 const fs = require('fs');
-const minimatch = require('minimatch');
+const minimatch = require('../vendor/minimatch');
 const resolve = path.resolve;
 const exists = fs.existsSync;
 const Mocha = require('../');
@@ -277,7 +277,7 @@ program
   .command('init <path>')
   .description('initialize a client-side mocha setup at <path>')
   .action(path => {
-    const mkdir = require('mkdirp');
+    const mkdir = require('../vendor/mkdirp');
     mkdir.sync(path);
     const css = fs.readFileSync(join(__dirname, '..', 'mocha.css'));
     const js = fs.readFileSync(join(__dirname, '..', 'mocha.js'));
