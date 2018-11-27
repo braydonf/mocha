@@ -1,7 +1,7 @@
 'use strict';
 
 var fs = require('fs');
-var mkdirp = require('mkdirp');
+var mkdirp = require('../../vendor/mkdirp');
 var path = require('path');
 var assert = require('assert');
 var reporters = require('../../').reporters;

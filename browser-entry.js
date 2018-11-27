@@ -7,7 +7,7 @@
  * Shim process.stdout.
  */
 
-process.stdout = require('browser-stdout')({label: false});
+process.stdout = require('./vendor/browser-stdout')({label: false});
 
 var Mocha = require('./lib/mocha');
 
